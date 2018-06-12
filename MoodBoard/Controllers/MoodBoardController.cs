@@ -10,8 +10,12 @@ namespace MoodBoard.Controllers
 {
     public class MoodBoardController : ApiController
     {
-        readonly MoodBoardService moodBoardService = new MoodBoardService();
-
+        readonly IMoodBoardService moodBoardService = new MoodBoardService();
+            
+        public MoodBoardController(IMoodBoardService moodBoardService)
+        {
+            this.moodBoardService = moodBoardService;
+        }
 
         [Route("api/moodboard"), HttpGet]
         public HttpResponseMessage GetAll()

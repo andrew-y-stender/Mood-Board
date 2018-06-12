@@ -8,7 +8,7 @@ using MoodBoard.Models;
 
 namespace MoodBoard.Services
 {
-    public class MoodBoardService
+    public class MoodBoardService : IMoodBoardService
     {
         string connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         public List<MoodBoardModel> GetAll()
@@ -43,10 +43,12 @@ namespace MoodBoard.Services
                         // this loop will happen once for every row coming out of the database
 
                         var moodboard = new MoodBoardModel();
-                        moodboard.MoodId = (int)reader["ModelId"];
+                        moodboard.MoodId = (int)reader["MoodId"];
                         moodboard.SoundByteURL = (string)reader["SoundByteURL"];
                         moodboard.DateCreated = (DateTime)reader["DateCreated"];
                         moodboard.DateModified = (DateTime)reader["DateModified"];
+
+                        results.Add(moodboard);
                     }
                     return results;
                 }
