@@ -1,28 +1,198 @@
-.App {
+h1, h3 {
+  text-align :center;
+  color: purple;
+}
+
+h1 {
+  color: black;
+  font-size: 40pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+i {
+  margin-top: .4em;
+  color: purple;
+}
+
+.center {
+  text-align : center;
+}
+
+.purpleButton {
+  background: radial-gradient(circle, #c1e0ff, white, purple);
+  color: purple;
+}
+
+.blueButton {
+  background: radial-gradient(circle, #c1e0ff, white, blue);
+  color: blue;
+}
+
+.redButton {
+  background:radial-gradient(circle, #c1e0ff, white, red);
+  color: red;
+}
+
+button {
+  font-size: 20pt;
+  margin-top: 2em;
+  padding: .75em;
+  border-radius: 35px;
+  font-weight: bold;
+  margin-bottom: 2em;
+  margin-left:.5em;
+  margin-right:.5em;
+}
+
+
+
+.mood-name {
+  font-size: 16pt;
+  font-weight: bold;
+  padding-top: 1em;
+  color: purple;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px );
+  margin-left: 10em;
+  gap: 4em;
+  margin-top: 100px;
+}
+
+body {
+	color: #fff;
+	background: linear-gradient(-45deg, pink, white, purple, white);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+label {
+  font-size: 18pt;
+  font-weight:bold;
+  color: purple;
+  margin: .5em;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+input[type="text"] {
+  border-radius: 15px;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 14pt;
+}
+
+.tile {
+  border: solid;
+  border-color: purple;
+  border-radius: 15px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  max-width: 100%;
   text-align: center;
+  background-size: 200px 200px;
+  background:radial-gradient(circle, pink, white, #c1e0ff);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.backgroundStyle  {
+  border-radius: 65px;
+  margin-top: 5em;
+  position: sticky;
+  top: 5px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  background:radial-gradient(pink, white, purple);
+  padding: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.modifyBackgroundStyle {
+  border-radius: 65px;
+  margin-top: 5em;
+  position: sticky;
+  top: 5px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  background:radial-gradient(pink, white, blue);
+  padding: 50px
 }
 
-.App-title {
-  font-size: 1.5em;
+.deleteBackgroundStyle {
+  border-radius: 65px;
+  margin-top: 5em;
+  position: sticky;
+  top: 5px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  background:radial-gradient(pink, white, red);
+  padding: 50px
 }
 
-.App-intro {
-  font-size: large;
+.modalStyle {
+  border-radius: 55px;
+  background:radial-gradient(circle, pink, white, #c1e0ff);
+  border: 5;
+  max-width: 500;
+  min-height: 300;
+  padding: 30
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+form {
+  padding: 3em;
 }

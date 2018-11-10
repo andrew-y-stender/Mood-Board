@@ -5,6 +5,9 @@ namespace MoodBoard.Services
 {
     public interface IMoodBoardService
     {
-        List<MoodBoardModel> GetAll();
+        List<MoodBoardModel> GetAllMoods();
+        int CreateMood(CreateMoodModel req);
+        void UpdateMood(MoodBoardUpdateRequestModel req);
+        void DeleteMood(int id);
     }
 }

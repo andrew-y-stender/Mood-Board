@@ -107,7 +107,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CreateMoodModel.cs" />
     <Compile Include="Models\MoodBoard.cs" />
+    <Compile Include="Models\MoodBoardUpdateRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IMoodBoardService.cs" />
     <Compile Include="Services\MoodBoardService.cs" />
